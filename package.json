@@ -1,0 +1,24 @@
+{
+  "name": "telegram-buzzheavier-bot",
+  "version": "1.0.0",
+  "description": "Telegram bot that downloads files from Telegram and uploads them to BuzzHeavier.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "clean-temp": "rimraf temp/*"
+  },
+  "author": "alex5402",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.1",
+    "fs": "0.0.1-security",
+    "node-telegram-bot-api": "^0.61.0",
+    "telegram": "^1.8.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2",
+    "rimraf": "^5.0.1"
+  }
+}
