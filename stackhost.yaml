@@ -1,0 +1,20 @@
+user:
+  name: ultroid
+  github: TeamUltroid
+
+language: "python"
+python_version: "3.13"
+
+commands:
+  build:
+    - "apt-get update && apt-get install -y python3 python3-pip ffmpeg mediainfo neofetch git"
+    - "pip3 install -U -r requirements.txt"
+    - "pip3 install -U -r resources/startup/optional-requirements.txt"
+    - "pip3 install telethonpatch"
+  start:
+    - "bash rum"
+
+env:
+  - "ENVIRONMENT=production"
+  - "TELEGRAM_TOKEN=your-telegram-bot-token"
+  - "BUZZHEAVIER_API_KEY=your-buzzheavier-api-key"
